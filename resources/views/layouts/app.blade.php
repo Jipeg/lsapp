@@ -14,6 +14,7 @@
         <h1>{{$title}}</h1>
     </div>
     <div class="container">
+        @yield('inc/messages')
         @yield('content')
     </div>
 

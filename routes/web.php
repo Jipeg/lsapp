@@ -1,7 +1,9 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController; //!! ВАЖНО добавить!
+use App\Http\Controllers\PostsController; 
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +21,6 @@ Route::get('/about', [PageController::class, 'about']);
 Route::get('/services', [PageController::class, 'services']);    
 
 
-
 // Route::get('/kolya', function () {
 //     return 'Hello, kolya';
 // });
@@ -32,3 +33,5 @@ Route::get('/services', [PageController::class, 'services']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resource('posts', PostsController::class);

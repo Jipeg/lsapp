@@ -15,6 +15,15 @@
       <li class="nav-item">
         <a class="nav-link" href="/services">Services</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/posts">Posts</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/posts/create">Create new post</a>
+      </li>
     </ul>
   </div>
 </nav>
