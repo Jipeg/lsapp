@@ -8,6 +8,11 @@
         <hr>
         <small>Written on {{$post->created_at}}</small>
     </div>
+    <a href="/posts/{{$post->id}}/edit" class="btn btn-default">Change post</a>
+    {!! Form::open(['action' => ['App\Http\Controllers\PostsController@destroy', $post->id], 'method' => 'POST']) !!}
+    {{Form::hidden('_method', 'DELETE')}}
+    {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
+    {!! Form::close() !!}
     @else
     <div class="card">
         No posts with such id found! 
