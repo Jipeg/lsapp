@@ -6,7 +6,7 @@
     {!! Form::label('title', 'Title') !!}
     {!! Form::text('title', $post->title, ['class' => 'form-control']) !!}
     {!! Form::label('body', 'Text body') !!}
-    {!! Form::textarea('body', $post->body, ['class' => 'form-control']) !!}
+    {!! Form::textarea('body', $post->body, ['class' => 'form-control', 'id' => 'editor']) !!}
     {!! Form::hidden('_method', 'PUT') !!}
     {!! Form::submit('Save changes!') !!}
 </div>

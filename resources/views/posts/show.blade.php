@@ -4,7 +4,7 @@
     @if($post)
     <div class="card">
         <h2 class="card-title">{{$post->title}}</h2>
-        <div class="card-body">{{$post->body}}</div>
+        <div class="card-body">{!!$post->body!!}</div>
         <hr>
         <small>Written on {{$post->created_at}}</small>
     </div>

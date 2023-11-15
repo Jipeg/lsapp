@@ -6,7 +6,7 @@
         {!! Form::label('title', 'Title') !!}
         {!! Form::text('title', '', ['class' => 'form-control',  'placeholder'=>'title']) !!}
         {!! Form::label('body', 'Text body') !!}
-        {!! Form::textarea('body', '', ['class' => 'form-control', 'id' => 'article-ckeditor', 'placeholder'=>'Text body']) !!}
+        {!! Form::textarea('body', '', ['class' => 'form-control', 'id' => 'editor', 'placeholder'=>'Text body']) !!}
         {!! Form::submit('Click Me!') !!}
     </div>
     {!! Form::close() !!}
